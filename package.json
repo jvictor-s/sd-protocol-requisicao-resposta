@@ -1,0 +1,24 @@
+{
+  "name": "request-reply-udp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Protocolo de Requisição-Resposta (doOperation / getRequest / sendReply) sobre sockets de datagrama UDP - atividade da disciplina de Sistemas Distribuídos",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "server": "node src/server/server-demo.ts",
+    "client": "node src/client/client-demo.ts",
+    "ping": "node src/client/ping.ts",
+    "probe": "node src/interop/probe.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "start": "node dist/src/server/server-demo.js",
+    "test": "node --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
